@@ -9,6 +9,7 @@ const App = () => {
     { name: 'Data Pipeline Eng.', category: 'ai', icon: '⚙️' },
     { name: 'Machine Learning', category: 'ai', icon: '🤖' },
     { name: 'Python', category: 'code', icon: '🐍' },
+    { name: 'Java', category: 'code', icon: '☕' },
     { name: 'SQL & PL/SQL', category: 'code', icon: '🗄️' },
     { name: 'React & JavaScript', category: 'code', icon: '⚛️' },
     { name: 'HTML5 & CSS3', category: 'code', icon: '🎨' },
