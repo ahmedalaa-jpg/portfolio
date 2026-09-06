@@ -26,7 +26,6 @@ const App = () => {
 
   return (
     <div className="portfolio-app-root">
-      {}
       <style>{`
         * {
           box-sizing: border-box;
@@ -273,10 +272,10 @@ const App = () => {
 
         /* About & Skills */
         .card-about {
-          grid-column: span 5;
+          grid-column: span 12;
         }
         .card-skills {
-          grid-column: span 7;
+          grid-column: span 12;
         }
         .card-title-group {
           display: flex;
@@ -460,7 +459,6 @@ const App = () => {
         }
       `}</style>
 
-      {}
       <div className="container">
         <nav className="navbar">
           <div className="nav-brand">
@@ -475,7 +473,6 @@ const App = () => {
           </div>
         </nav>
 
-        {}
         <div className="bento-grid">
           <div className="bento-card card-hero">
             <div className="hero-badge">
@@ -512,7 +509,6 @@ const App = () => {
             </div>
           </div>
 
-          {}
           <div className="bento-card card-cta-bar">
             <div>
               <h4 style={{ fontWeight: 700, fontSize: '0.95rem' }}>Let's Build Something Great Together</h4>
@@ -533,18 +529,42 @@ const App = () => {
             </div>
           </div>
 
-          {}
+          {/* Expanded About Me Bento Card */}
           <div className="bento-card card-about" id="about">
             <div className="card-title-group">
               <span className="card-title-icon">👤</span>
-              <h3 className="card-title-text">About Me</h3>
+              <h3 className="card-title-text" style={{ fontSize: '1.4rem' }}>About Me</h3>
             </div>
-            <p className="about-text">
-              Senior Computer Science & Mathematics student at Cairo University, specializing in data processing and artificial intelligence solutions. Experienced in data cleaning, engineering scalable pipelines, and web scraping automation.
+            
+            <p className="about-text" style={{ fontSize: '1.05rem', lineHeight: '1.8', color: '#e2e8f0', marginBottom: '20px' }}>
+              Senior Computer Science & Mathematics student at Cairo University (Faculty of Science), specializing in Data Science, Artificial Intelligence, and Big Data Processing. Experienced in engineering scalable data pipelines, feature scaling, automated web scraping (Scrapy, Selenium, BeautifulSoup), and database management (SQL, PL/SQL, pgAdmin). Participant in the Digital Egypt Pioneers Initiative (DEPI) - IBM Data Science & AI track. Passionate about driving business value by transforming complex datasets into actionable insights.
             </p>
+
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+              gap: '14px',
+              marginTop: '20px',
+              paddingTop: '20px',
+              borderTop: '1px solid rgba(255, 255, 255, 0.08)'
+            }}>
+              <div style={{ background: 'rgba(255, 255, 255, 0.03)', padding: '16px', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.06)' }}>
+                <span style={{ color: '#34d399', fontWeight: '700', fontSize: '0.9rem', display: 'block', marginBottom: '4px' }}>🎓 Education</span>
+                <p style={{ color: '#9ca3af', fontSize: '0.85rem', margin: 0 }}>B.Sc. CS & Math — Cairo University</p>
+              </div>
+              
+              <div style={{ background: 'rgba(255, 255, 255, 0.03)', padding: '16px', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.06)' }}>
+                <span style={{ color: '#34d399', fontWeight: '700', fontSize: '0.9rem', display: 'block', marginBottom: '4px' }}>🚀 Track</span>
+                <p style={{ color: '#9ca3af', fontSize: '0.85rem', margin: 0 }}>IBM Data Science & AI — DEPI</p>
+              </div>
+
+              <div style={{ background: 'rgba(255, 255, 255, 0.03)', padding: '16px', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.06)' }}>
+                <span style={{ color: '#34d399', fontWeight: '700', fontSize: '0.9rem', display: 'block', marginBottom: '4px' }}>💡 Specialization</span>
+                <p style={{ color: '#9ca3af', fontSize: '0.85rem', margin: 0 }}>Data Pipelines & Web Scraping</p>
+              </div>
+            </div>
           </div>
 
-          {}
           <div className="bento-card card-skills" id="skills">
             <div className="card-title-group">
               <span className="card-title-icon">⚡</span>
@@ -573,7 +593,6 @@ const App = () => {
             </div>
           </div>
 
-          {}
           <div className="bento-card card-project" id="projects">
             <div>
               <span className="project-tag">Data Engineering</span>
@@ -610,7 +629,6 @@ const App = () => {
             </a>
           </div>
 
-          {}
           <div className="bento-card card-certs" id="certs">
             <div className="card-title-group">
               <span className="card-title-icon">🏆</span>
@@ -635,7 +653,6 @@ const App = () => {
           </div>
         </div>
 
-        {}
         <footer className="footer-section">
           <p>© {new Date().getFullYear()} Ahmed Alaa Eldin — All Rights Reserved.</p>
         </footer>
