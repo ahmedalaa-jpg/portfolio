@@ -16,6 +16,7 @@ const App = () => {
     { name: 'Scrapy & BeautifulSoup', category: 'scraping', icon: '🕷️' },
     { name: 'Selenium Automation', category: 'scraping', icon: '🌐' },
     { name: 'Git & GitHub', category: 'tools', icon: '🐙' },
+    { name: 'VS Code', category: 'tools', icon: '💙' },
     { name: 'pgAdmin & PostgreSQL', category: 'tools', icon: '🐘' },
     { name: 'Jupyter & Kaggle', category: 'tools', icon: '📊' },
     { name: 'Firebase', category: 'tools', icon: '🔥' },
